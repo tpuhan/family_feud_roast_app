@@ -1,0 +1,252 @@
+[
+  {
+    "question": "What is the most common lie said during a client call?",
+    "answers": [
+      {
+        "text": "We'll get it done by EOD",
+        "points": 35
+      },
+      {
+        "text": "That's a great question",
+        "points": 25
+      },
+      {
+        "text": "You're on mute",
+        "points": 20
+      },
+      {
+        "text": "We'll circle back",
+        "points": 12
+      },
+      {
+        "text": "We have the expertise",
+        "points": 8
+      }
+    ]
+  },
+  {
+    "question": "Whose spouse hears 'just 5 more minutes' the most?",
+    "answers": [
+      {
+        "text": "Everyone here",
+        "points": 40
+      },
+      {
+        "text": "The manager",
+        "points": 25
+      },
+      {
+        "text": "The overachiever",
+        "points": 20
+      },
+      {
+        "text": "The new joiner",
+        "points": 10
+      },
+      {
+        "text": "The 'WFH' traveler",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "question": "What's the most broken thing in any office?",
+    "answers": [
+      {
+        "text": "The printer",
+        "points": 30
+      },
+      {
+        "text": "Work-life balance",
+        "points": 25
+      },
+      {
+        "text": "WiFi",
+        "points": 20
+      },
+      {
+        "text": "Coffee machine",
+        "points": 15
+      },
+      {
+        "text": "Everyone's spirit",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What do kids think their parents actually do at work?",
+    "answers": [
+      {
+        "text": "Make PowerPoints",
+        "points": 40
+      },
+      {
+        "text": "Talk on Zoom",
+        "points": 30
+      },
+      {
+        "text": "Drink coffee",
+        "points": 15
+      },
+      {
+        "text": "Type fast",
+        "points": 10
+      },
+      {
+        "text": "Look stressed",
+        "points": 5
+      }
+    ]
+  },
+  {
+    "question": "What is the fastest way to look busy without doing work?",
+    "answers": [
+      {
+        "text": "Stare at Excel",
+        "points": 30
+      },
+      {
+        "text": "Type in Slack",
+        "points": 25
+      },
+      {
+        "text": "Walk with laptop",
+        "points": 20
+      },
+      {
+        "text": "Alt-Tab speedrun",
+        "points": 15
+      },
+      {
+        "text": "Frown at screen",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What disappears first at any office party?",
+    "answers": [
+      {
+        "text": "Samosas/snacks",
+        "points": 35
+      },
+      {
+        "text": "Free booze",
+        "points": 25
+      },
+      {
+        "text": "Chairs",
+        "points": 15
+      },
+      {
+        "text": "Dignity",
+        "points": 15
+      },
+      {
+        "text": "The CFO",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What's the most dangerous phrase in a meeting?",
+    "answers": [
+      {
+        "text": "Quick sync",
+        "points": 30
+      },
+      {
+        "text": "One last slide",
+        "points": 25
+      },
+      {
+        "text": "Any volunteers?",
+        "points": 20
+      },
+      {
+        "text": "Let's brainstorm",
+        "points": 15
+      },
+      {
+        "text": "Fun activity",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What's the real reason cameras are off on calls?",
+    "answers": [
+      {
+        "text": "Still in bed",
+        "points": 35
+      },
+      {
+        "text": "Eating",
+        "points": 25
+      },
+      {
+        "text": "Watching reels",
+        "points": 15
+      },
+      {
+        "text": "Bad hair day",
+        "points": 15
+      },
+      {
+        "text": "Not at home",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What do spouses secretly think office workers do?",
+    "answers": [
+      {
+        "text": "Make pretty slides",
+        "points": 40
+      },
+      {
+        "text": "Gossip",
+        "points": 25
+      },
+      {
+        "text": "Sit in fake meetings",
+        "points": 15
+      },
+      {
+        "text": "Order food",
+        "points": 10
+      },
+      {
+        "text": "Complain about work",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What's the most common thought on Monday morning?",
+    "answers": [
+      {
+        "text": "Why am I here?",
+        "points": 30
+      },
+      {
+        "text": "This could be an email",
+        "points": 25
+      },
+      {
+        "text": "I need coffee",
+        "points": 20
+      },
+      {
+        "text": "Next vacation when?",
+        "points": 15
+      },
+      {
+        "text": "Change careers?",
+        "points": 10
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family Feud – Board</title>
+  <link rel="stylesheet" href="/static/feud.css">
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body class="board-body">
+  <div class="stage">
+    <div class="header">
+      <div class="title">FAMILY FEUD – ROAST EDITION</div>
+      <div class="question" id="question">Loading question…</div>
+      <div class="meta">
+        <span id="qmeta"></span>
+      </div>
+    </div>
+
+    <div class="answers" id="answers"></div>
+
+    <div class="footer-row">
+      <div class="strikes" id="strikes"></div>
+      <div class="scores">
+        <div class="score-card"><span>Team A</span><strong id="scoreA">0</strong></div>
+        <div class="score-card"><span>Team B</span><strong id="scoreB">0</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const socket = io();
+
+    function render(payload){
+      const {question_index, question_total, question, answers, revealed, strikes, scores} = payload;
+      document.getElementById("question").textContent = question;
+      document.getElementById("qmeta").textContent = `Question ${question_index+1} of ${question_total}`;
+
+      const ansEl = document.getElementById("answers");
+      ansEl.innerHTML = "";
+      answers.forEach((a, i) => {
+        const card = document.createElement("div");
+        card.className = "answer-card " + (revealed[i] ? "revealed" : "hidden");
+        const left = document.createElement("div");
+        left.className = "slot";
+        left.textContent = i+1;
+
+        const text = document.createElement("div");
+        text.className = "text";
+        text.textContent = revealed[i] ? a.text : "— — —";
+
+        const pts = document.createElement("div");
+        pts.className = "points";
+        pts.textContent = revealed[i] ? a.points : "";
+
+        card.appendChild(left);
+        card.appendChild(text);
+        card.appendChild(pts);
+        ansEl.appendChild(card);
+      });
+
+      // strikes
+      const sEl = document.getElementById("strikes");
+      sEl.innerHTML = "";
+      for (let i=0;i<strikes;i++){
+        const x = document.createElement("div");
+        x.className = "strike";
+        x.textContent = "X";
+        sEl.appendChild(x);
+      }
+
+      // scores
+      document.getElementById("scoreA").textContent = scores["Team A"] ?? 0;
+      document.getElementById("scoreB").textContent = scores["Team B"] ?? 0;
+    }
+
+    socket.on("connect", ()=> socket.emit("request_state"));
+    socket.on("update_state", render);
+  </script>
+</body>
+</html>
